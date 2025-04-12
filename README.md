@@ -1,41 +1,62 @@
-# Quản lý điểm sinh viên - Hệ tín chỉ
+# Student Management System - Credit System
 
-Ứng dụng quản lý điểm sinh viên theo hệ tín chỉ được phát triển bằng C# và SQL Server.
+A comprehensive student management system for credit-based education, developed with C# and SQL Server.
 
-## Tính năng
+## Features
 
-- Đăng nhập với các vai trò: Phòng giáo vụ (PGV), Khoa, Sinh viên (SV), Giảng viên (GV)
-- Quản lý danh mục: Khoa, Lớp, Sinh viên, Giảng viên, Môn học
-- Quản lý lớp tín chỉ: Mở lớp, đăng ký, nhập điểm
-- Báo cáo: Danh sách lớp tín chỉ, danh sách sinh viên đăng ký, bảng điểm môn học, phiếu điểm, danh sách học phí, bảng điểm tổng kết
-- Quản trị: Tạo tài khoản, sao lưu và phục hồi cơ sở dữ liệu
+- **Multi-role Authentication**: Support for Academic Affairs Office (PGV), Department (KHOA), Students (SV), and Lecturers (GV)
+- **Catalog Management**: Departments, Classes, Students, Lecturers, Courses
+- **Credit Class Management**: Opening classes, registration, grade entry
+- **Reporting**: Credit class lists, student registration lists, course grade reports, student transcripts, tuition fee reports, final grade reports
+- **Administration**: User account creation, database backup and restore
 
-## Cấu trúc cơ sở dữ liệu
+## Database Structure
 
-- Khoa: Thông tin về các khoa
-- Lop: Thông tin về các lớp
-- Sinhvien: Thông tin về sinh viên
-- Giangvien: Thông tin về giảng viên
-- Monhoc: Thông tin về môn học
-- Loptinchi: Thông tin về lớp tín chỉ
-- Dangky: Thông tin đăng ký lớp tín chỉ của sinh viên
+- **Khoa**: Department information
+- **Lop**: Class information
+- **Sinhvien**: Student information
+- **Giangvien**: Lecturer information
+- **Monhoc**: Course information
+- **Loptinchi**: Credit class information
+- **Dangky**: Student registration information for credit classes
 
-## Yêu cầu hệ thống
+## System Requirements
 
-- Windows 7 trở lên
-- .NET Framework 4.5 trở lên
-- SQL Server 2012 trở lên
+- Windows 7 or later
+- .NET Framework 4.5 or later
+- SQL Server 2012 or later
 
-## Cài đặt
+## Installation
 
-1. Tạo cơ sở dữ liệu QLDSV_HTC bằng script SQL đi kèm
-2. Cấu hình chuỗi kết nối trong file App.config
-3. Build và chạy ứng dụng
+1. Create the QLDSV_HTC database using the included SQL script
+2. Configure the connection string in App.config
+3. Build and run the application
 
-## Tác giả
+## Login Information
+
+### Student Login
+- Username: Student ID (e.g., SV001)
+- Password: 123456 (default)
+
+### Lecturer Login
+- Username: Lecturer ID (e.g., GV001)
+- Password: 123456 (default)
+
+## Project Structure
+
+- **BLL**: Business Logic Layer
+- **DAL**: Data Access Layer
+- **DTO**: Data Transfer Objects
+- **GUI**: Graphical User Interface
+
+## Screenshots
+
+*Coming soon*
+
+## Author
 
 - Threde
 
-## Giấy phép
+## License
 
-Dự án này được phân phối dưới giấy phép MIT. Xem file `LICENSE` để biết thêm chi tiết.
+This project is licensed under the MIT License - see the LICENSE file for details.
